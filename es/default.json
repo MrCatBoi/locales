@@ -1,11 +1,11 @@
 {
     "errors": {
-        "INSUFFICIENT_ARGS": "Se han proporcionado argumentos insuficientes - esperaba que {{requiredArgs}} argumentos, pero sólo encontré argumentos {{argsCount}}.\nEl uso correcto sería: `{{usage}}`",
+        "INSUFFICIENT_ARGS": "Se han proporcionado argumentos insuficientes. - Esperaba {{requiredArgs}} argumentos, pero sólo encontré {{argsCount}} argumentos.\nEl uso correcto sería: `{{usage}}`".
         "NO_END_QUOTE": "Tiene una cita de finalización que falta.",
-        "ON_COOLDOWN": "Por favor cálmate! ({{time}} segundos antes de poder poner este comando otra vez.",
-        "NO_PERMS": "Necesitas los permisos {{perms}} para ejecutar este comando!",
+        "ON_COOLDOWN": "Por favor cálmate! Debes esperar ({{time}} segundos antes de poder ejecutar ese comando otra vez.",
+        "NO_PERMS": "Necesitas los siguientes permisos para ejecutar este comando: {{perms}}",
         "NO_PERMS_BOT": "Necesito los permisos {{perms}} para ejecutar este comando!",
-        "NOT_FOUND": "No sé encontró el usuario.",
+        "NOT_FOUND": "No se ha encontrado el usuario.",
         "NO_PMS": "No puedes ejecutar este comando en mensaje privado.",
         "CLAIMED": "Tu siguiente recompensa diaria {{currency}} será en {{nexty_daily}}",
         "GIVE_MONEY_HIMSELF": "Desafortunadamente, no puedes darte dinero a ti mismo.\n",
@@ -170,8 +170,8 @@
             "TALK": "La gente ahora puede hablar"
         },
         "slot": {
-            "LOST": "**You lost!**",
-            "WIN": "**Congratulations!**\nYou won {{win}}"
+            "LOST": "**Has perdido!**",
+            "WIN": "**Felicidades!**\nHas ganado **{{win}}**."
         },
         "logs": {
             "TOGGLE": "Los registros {{reply}} están ahora configurados en {{toggle}} en el canal `{{name}}`"
@@ -227,9 +227,9 @@
         "MONEY_USER": "{{user}} tiene {{amount}}",
         "GIVE_MONEY": "{{member}} recibió correctamente su {{amount}}",
         "music": {
-            "ADD_MUSIC": "Añadido {{music}} a la cola.",
-            "ADD_PLAYLIST": "Se agregó la lista de reproducción ({{musics}} a la cola.",
-            "SHUFFLE": "La cola esta siendo barajada",
+            "ADD_MUSIC": "Añadido {{music}} a la cola de canciones.",
+            "ADD_PLAYLIST": "Se agregó la lista de reproducción ({{musics}} a la cola de canciones.",
+            "SHUFFLE": "La cola esta siendo barajada.",
             "STOP": "La música se ha detenido.",
             "repeat": {
                 "REPEAT_MODE": "Modo de repetición: {{repeat}}",
@@ -244,19 +244,19 @@
         "THANKS_DONATORS": "¡Gracias por tu soporte!",
         "REASON": "Razón",
         "ban": {
-            "CANCEL": "Entendido, no prohibiré {{miembro}}"
+            "CANCEL": "Entendido, **{{user}}** fue baneado del servidor."
         },
         "kick": {
-            "CANCEL": "Entendido, no voy a expulsar {{miembro}}"
+            "CANCEL": "Entendido, {{user}} fue echado del servidor."
         },
         "softban": {
-            "CANCEL": "Entendido, no voy a prohibir ligeramente a {{member}}"
+            "CANCEL": "Entendido, **{{member}}** recibió un soft-ban."
         },
         "avatar": {
-            "AVATAR": "Aquí está el Avatar de **{{member}}**\n  {{avatarURL}}"
+            "AVATAR": "Aquí está el Avatar de **{{member}}**.\n  **{{avatarURL}}**"
         },
         "invite": {
-            "MSG": "Si necesita ayuda, tenga sugerencias o comentarios sobre algo en el servidor de soporte: https://discord.gg/XVrGEU7"
+            "MSG": "Si necesitas ayuda, tenga sugerencias o comentarios sobre algo en el servidor de soporte: https://discord.gg/XVrGEU7"
         }
     },
     "embed": {
@@ -385,18 +385,18 @@
     "images": {
         "awoo": {
             "NO_MENTION": "{{author}} awoo",
-            "MENTION": "{{author}} awooo {{user}}"
+            "MENTION": "{{author}} awoo {{user}}"
         },
         "cry": {
             "NO_MENTION": "{{author}} llora.",
             "MENTION": "{{author}} llora por {{user}}"
         },
         "dab": {
-            "NO_MENTION": "{{author}} dab",
-            "MENTION": "{{author}} le hace un dab a {{user}}"
+            "NO_MENTION": "{{author}} hizo un dab.",
+            "MENTION": "{{author}} dabea en {{user}}."
         },
         "dance": {
-            "NO_MENTION": "{{author}} baila!",
+            "NO_MENTION": "{{author}} baila con... Nadie. Eso es triste.",
             "MENTION": "{{author}} baila con {{user}}!"
         },
         "hug": {
@@ -418,19 +418,19 @@
         "owo": "¿Qué es esto?",
         "pat": {
             "NO_MENTION": "{{author}} acaricia... a un perro?",
-            "MENTION": "{{author}} acaricia a {{user}}"
+            "MENTION": "{{user}}, fuiste acariciado por {{author}}."
         },
         "pouting": {
             "NO_MENTION": "{{author}} pone mala cara a... una loli?",
-            "MENTION": "{{author}} Pone mala cara a {{user}}."
+            "MENTION": "{{author}} le pone mala cara a {{user}}."
         },
         "slap": {
-            "NO_MENTION": "{{author}} Se da una bofetada... a si mismo?",
-            "MENTION": "{{author}} le da una bofetada a {{user}}"
+            "NO_MENTION": "{{author}} le da una bofetada... a si mismo?",
+            "MENTION": "{{user}}, {{author}} te ha bofeteado!"
         },
         "sleepy": "{{author}} se siente dormido 💤.",
         "sumfuk": {
-            "NO_MENTION": "{{author}} Quiere un poco de sexo.",
+            "NO_MENTION": "{{author}} quiere un poco de sexo.",
             "MENTION": "{{author}} quiere follar a {{user}}."
         },
         "triggered": {
